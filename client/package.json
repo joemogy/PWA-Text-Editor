@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
-    "start": "webpack --watch"
+    "start": "webpack --watch",
     "heroku-prebuild": "npm install --dev"
   },
   "author": "2U",
