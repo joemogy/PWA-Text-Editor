@@ -1,7 +1,11 @@
 {
   "name": "JATE",
   "version": "1.0.0",
-  "description": "",
+  "engines:": {
+    "node": "16.18.0",
+    "npm": "8.19.2"
+  },
+  "description": "Use Text Editor",
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
@@ -9,7 +13,8 @@
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
     "install": "cd server && npm i && cd ../client && npm i",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "heroku-prebuild": "npm install --dev"
   },
   "keywords": [],
   "author": "",
@@ -20,12 +25,6 @@
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4",
-    "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0"
-  },
-  "engines": {
-    "node": "16.15.1",
-    "npm": "8.11.0"
+    "nodemon": "^2.0.4"
   }
 }
