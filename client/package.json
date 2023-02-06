@@ -4,6 +4,7 @@
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
     "start": "webpack --watch"
+    "heroku-prebuild": "npm install --dev"
   },
   "author": "2U",
   "license": "UNLICENSED",
